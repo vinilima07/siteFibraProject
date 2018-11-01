@@ -10,18 +10,13 @@ h1, h2, h3, h4{
 	text-align: center;
 }
 
-a:hover{
-	color: blue;
-	cursor: pointer;
-}
-
-a i:hover{
-	color: blue;
+a:hover, a i:hover{
+	font-style: bold;
 	cursor: pointer;
 }
 
 .nav{
-	background: gray;
+	background: #e0e0d1;
 	width: 100%;
 	display: inline;
 	float: left;
@@ -76,12 +71,30 @@ a i:hover{
 }
 
 .plan-desc{
-	background: gray;
+	background: #e0e0d1;
+}
+
+.services{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	text-align: justify;
+	padding: 1em;
+}
+
+.services p{
+	padding-left: 3em;
+}
+
+.title-item{
+	color: gray;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .content-page{
 	width: 100%;
-	padding-top: 50px;
 	text-align: center;
 	display: inline-block;
 }
@@ -90,6 +103,56 @@ a i:hover{
 	width: 100%;
 	display: table;
 	margin: 0 auto;
+}
+
+.content-page div h1{
+	padding: 0.5em;
+}
+
+.content-page div h3{
+	padding-bottom: 1.5em;
+}
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#page-footer{
+	padding: 1.5em;
+}
+
+#ballon-help, #ballon-email{
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    padding: 15px;
+    outline: none !important;
+    z-index: 10000000000000;
+}
+
+#ballon-help button, #ballon-email button{
+	cursor: pointer;
+	background: black;
+	color: white;
+	border: 5px solid black;
+	border-radius: 35px;
+	padding: 1em;
+}
+
+#ballon-help button:hover, #ballon-email button:hover{
+	font-weight: bold;
+}
+
+#ballon-email{
+	right: 10px;
+}
+
+
+#ballon-help{
+	left: 10px;
 }
 
 @media(min-width: 768px){
