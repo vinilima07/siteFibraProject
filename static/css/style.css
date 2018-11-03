@@ -39,6 +39,10 @@ a:hover, a i:hover{
 	padding-left: 2em;
 }
 
+.menu a:hover{
+	font-weight: bold;
+}
+
 #dropdown-icon{
 	float: right;
 }
@@ -93,6 +97,12 @@ a:hover, a i:hover{
 	font-weight: bold;
 }
 
+.company-desc{
+	text-align: justify;
+	padding-left: 4em;
+	padding-right: 4em;
+}
+
 .content-page{
 	width: 100%;
 	text-align: center;
@@ -103,6 +113,15 @@ a:hover, a i:hover{
 	width: 100%;
 	display: table;
 	margin: 0 auto;
+	padding-bottom: 2em;
+}
+
+#page-home{
+	padding-top: 3em;
+}
+
+.company-desc:f{
+	background: black;
 }
 
 .content-page div h1{

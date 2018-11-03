@@ -6,7 +6,31 @@ $(document).ready(function() {
 	$("#page-services").load("services.html");
 
 	$("#dropdown-icon").click(function(){
-		$(".menu").toggle(1000);
+		$(".menu").toggle(500);
 	});
+
+	$(".menu-plans").click(function(){
+			$('#page-plans').scrollTop(100);
+	});
+
+	$('.menu-home').click(function() {
+  	$('html, body').animate({scrollTop: 0}, 500);
+	});
+	$('.menu-plans').click(function() {
+  	$('html, body').animate({scrollTop: $("#page-plans").offset().top-40}, 500);
+	});
+	$('.menu-benefits').click(function() {
+		$('html, body').animate({scrollTop: $("#page-benefits").offset().top-40}, 500);
+	});
+	$('.menu-footer').click(function() {
+		$('html, body').animate({scrollTop: $("#page-footer").offset().top-40}, 500);
+	});
+	$('.menu-company').click(function() {
+		$('html, body').animate({scrollTop: $("#page-company").offset().top-40}, 500);
+	});
+	$('.menu-services').click(function() {
+		$('html, body').animate({scrollTop: $("#page-services").offset().top-40}, 500);
+	});
+
 
 })
