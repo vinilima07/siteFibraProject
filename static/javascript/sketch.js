@@ -4,6 +4,7 @@ $(document).ready(function() {
 	$("#page-benefits").load("benefits.html");
 	$("#page-plans").load("plans.html");
 	$("#page-services").load("services.html");
+	$("#box-email").load("formulario.php");
 
 	$("#dropdown-icon").click(function(){
 		$(".menu").toggle(500);
@@ -32,5 +33,12 @@ $(document).ready(function() {
 		$('html, body').animate({scrollTop: $("#page-services").offset().top-40}, 500);
 	});
 
+	$("#ballon-email").click(function(){
+		$("#box-email").toggle(500);
+	});
+
+	$("#close-email").click(function(){
+		$("#box-email").toggle(500);
+	});
 
 })

@@ -157,7 +157,7 @@ a:hover, a i:hover{
 
 .plans-item a{
 	color: white;
-		background-color: #113a5d;
+	background-color: #113a5d;
 	border: 5px solid #113a5d;
 	border-radius: 15px;
 	padding: 5px;
@@ -211,6 +211,20 @@ a:hover, a i:hover{
 
 #ballon-help{
 	left: 10px;
+}
+
+#box-email{
+	display: none;
+	background: #ededed;
+	width: 40%;
+	cursor: pointer;
+	position: fixed;
+	bottom: 15%;
+	right: 30%;
+	padding: 15px;
+	outline: none !important;
+	color: white;
+	z-index: 10000000000000;
 }
 
 @media(min-width: 768px){
