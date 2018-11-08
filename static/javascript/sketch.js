@@ -37,8 +37,15 @@ $(document).ready(function() {
 		$("#box-email").toggle(500);
 	});
 
-	$("#close-email").click(function(){
-		$("#box-email").toggle(500);
-	});
-
 })
+
+$(window).resize(function(){
+	if($(window).width() >= 1100)
+		$(".menu").show();
+	else 
+		$(".menu").hide();
+})
+
+function closeEmail(){
+	$("#box-email").toggle(500);
+}

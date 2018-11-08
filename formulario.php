@@ -1,4 +1,4 @@
-<a id="close-email" style="float:right;">X</a>
+<a id="close-email" onclick="closeEmail()">X</a>
 <form id="form1" name="form1" method="post" action="formulario2.php">
   <table width="600" border="0" cellspacing="0" cellpadding="20">
     <tr>
