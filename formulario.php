@@ -1,5 +1,5 @@
 <a id="close-email" onclick="closeEmail()">X</a>
-<form id="form1" name="form1" method="post" action="phpmailer.php">
+<form id="form1" name="form1" method="post" action="/phpmailer.php">
   <table width="600" border="0" cellspacing="0" cellpadding="20">
     <tr>
       <td width="161" class="texto">Nome</td>

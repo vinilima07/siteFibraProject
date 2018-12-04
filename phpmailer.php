@@ -10,7 +10,7 @@ require 'vendor/autoload.php';
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
     //Server settings
-		//$mail->setLanguage('pt_br', '/PHPMailer-master/language/directory/');
+	//$mail->setLanguage('pt_br', '/PHPMailer-master/language/directory/');
     $mail->SMTPDebug = 2;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com'; 										  // Specify main and backup SMTP servers
@@ -19,11 +19,11 @@ try {
     $mail->Password = 'phpmailer1234';                    // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
-		//$email->Port = 465
+	//$email->Port = 465
 
     //Recipients
     $mail->setFrom('phpmailersend1@gmail.com', 'NOME DA EMPRESA');
-    $mail->addAddress('vinilima07@gmail.com', 'Joe User');     // Add a recipient
+    $mail->addAddress(email, nome);     				    // Add a recipient
     //$mail->addAddress('ellen@example.com');               // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     // $mail->addCC('cc@example.com');
@@ -33,18 +33,18 @@ try {
     //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
     //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
-		//Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+	//Content
+    $mail->isHTML(false);                                    // Set email format to HTML
+    $mail->Subject = assunto;
+  	//$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->AltBody = mensagem;
 
-		if(!$mail->send()) {
-    echo 'Nao foi possível enviar a mensagem.<br>';
-    echo 'Erro: ' . $mail->ErrorInfo;
-		} else {
-		    echo 'Mensagem enviada.';
-		}
+	if(!$mail->send()) {
+    	echo 'Nao foi possível enviar a mensagem.<br>';
+    	echo 'Erro: ' . $mail->ErrorInfo;
+	} else {
+	    echo 'Mensagem enviada.';
+	}
 
 } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
